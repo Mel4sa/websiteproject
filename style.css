@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+/* font değiştirdik */
+
+:root {
+  --main-color: #e6e6fa;
+  --black-color: #0e0e0e;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+/* root en üst düzey ebeveyn öğesini temsil eder */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0; /*dış boşluk*/
+  padding: 0; /*iç boşluk*/
+  box-sizing: border-box; /*bir etiketin toplam genişliğine ve yüksekliğine padding ve border'ı dahil etmemizi sağlar*/
+  outline: none; /*dış çizgi*/
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize; /*bir büyük bir küçük yazı */
+  transition: 0.2s ease; /*geçişi yavaşlatır*/
+}
+html {
+  font-size: 62.5%; /* 1 rem normalde 16 px ama 10 px e çevirdik */
+  overflow-x: hidden; /*yatay kaydırmayı kapatır  */
+overflow-y: hidden;
+  scroll-behavior: smooth; /*kaydırmay pürüzsüz yapar*/
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+.buton {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--black-color);
+}
+
+
+
+/* header başlangıcı */
+
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background-color: #fff;
+  width: 40rem;
+  height: 5rem;
+  display: flex; /*search ikonuyla search yerini yanyana attım */
+  align-items: center;
+  border-radius: 3rem;
+  box-shadow: 0px 0px 25px 2px rgb(0 0 0 / 75%);
+  transform: scaleY(0);
+}
+.header .search-form.active {
+  transform: scaleY(1);
+}
+.header .search-form i {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black-color);
+}
+.header .search-form input {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.header .logo img {
+  height: 10rem;
+  border-radius: 60rem ;
+  margin-top: 2rem;
+  padding-bottom:3rem ;
+  margin-right:1rem;
+}
+.header {
+  background-color: white;
+  display: flex; /*yan yana attık hakkımızdayı falan*/
+  align-items: center; /*ortaya attık hakkımızdayı falan*/
+  justify-content: space-between; /*ara mesafeyi ayarladık*/
+  padding: 0 7%; /*sağ sol %7 üst alt o padding*/
+  margin: 1rem 7%;
+  border-radius: 30rem; /*navbar yuvarlaklaştırma*/
+  box-shadow: 0px 0px 17px -2px rgba(o, 0, 0, 0.75); /*navbara gölge verdim*/
+  position: sticky; /*scrolla beraber navbar gelmesi sağladım*/
+  top: 0;
+  z-index: 1000; /*her zaman navbara öncelik verir üstünü kapatmaz*/
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent; /*iletişimin altına çizgi çeker görünmez*/
+}
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(
+    --main-color
+  ); /*üzerine gelindiğinde iletişimin vs.altına çizgi*/
+  padding: bottom 0.5rem;
+}
+.header .buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+#menu-buton {
+  display: none;
+}
+
+/* header bitişi*/
+
+/* home başlangıç */
+.home {
+  min-height: 104vh;
+  background: url(images/background\ image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+  color: white;
+}
+.home .content p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: 1rem 0;
+  color: black;
+}
+/* home bitiş */
+
+/* responsive başlangıç */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .logo img {
+    height: 10rem;
+    margin-left: 4rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header #menu-buton {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 9rem); /*  calc hesap makinası */
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+  }
+  .header .navbar .active {
+    right: 3rem;
+  }
+  .header .navbar a {
+    color: var(--black-color);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  
+}
+
+
+/* responsive bitiş */
