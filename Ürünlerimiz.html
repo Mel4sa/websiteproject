@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <!-- her 30 saniyede bir sayfa yeniler -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icon için font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mel's Bazaar Ürünlerimiz</title>
+    <link rel="stylesheet" href="style.css" />
+  
+
+    <link class="icon" rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+  <body
+    style="background-color: rgba(250, 235, 215, 0.312); background-image: none"
+  >
+    <!-- header başlangıcı  -->
+    <header class="header">
+      <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+      <!-- href linkin url adresidir -->
+      <nav class="navbar" id="chk1">
+        <a href="Ana Sayfa.html" target="_blank">Ana Sayfa</a>
+
+        <div class="dropdownnav">
+          <a href="Ürünlerimiz.html" style="text-decoration: underline"
+            >Ürünlerimiz</a
+          >
+          <div class="dropdownnav-content">
+            <a href="#SÜTÜRÜNLERİ">SÜT ÜRÜNLERİ</a>
+            <a href="#KAHVALTILIKLAR">KAHVALTILIKLAR</a>
+            <a href="#YUMURTALAR">YUMURTALAR</a>
+            <a href="#KURUYEMİŞLER">KURUYEMİŞLER</a>
+            <a href="#BAHARATLAR">BAHARATLAR</a>
+            <a href="#KURUMEYVELER">KURU MEYVELER</a>
+            <a href="#TAHILLAR">TAHILLAR</a>
+            <a href="#SALÇALAR">SALÇALAR</a>
+            <a href="#SOSLAR">SOSLAR</a>
+            <a href="#YAĞLAR">YAĞLAR</a>
+          </div>
+        </div>
+        <a href="Çok Satanlar.html" target="_blank">Çok Satanlar</a>
+        <a href="Çok Yakında.html">Çok Yakında</a>
+        <a href="Organikblog.html" target="_blank">Organik Blog</a>
+        <a href="Memnuniyet.html" target="_blank">Memnuniyet Anketi</a>
+        <a href="Hakkımızda.html" target="_blank">Hakkımızda</a>
+        <a href="İletişim.html" target="_blank">İletişim</a>
+      </nav>
+
+      <div class="buttons">
+        <button id="search-buton"><i class="fas fa-search"></i></button>
+       <a href="Sepet.html" target="_blank"><button> <i class="fas fa-shopping-cart"></i></button></a> 
+      </div>
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Ürünler içinde arayın"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="Ana Sayfa.html" target="_blank">Ana Sayfa</a>
+
+          <div class="dropdownnav">
+            <a href="Ürünlerimiz.html" style="text-decoration: underline"
+              >Ürünlerimiz</a
+            >
+            <div class="dropdownnav-content">
+              <a href="#SÜTÜRÜNLERİ">SÜT ÜRÜNLERİ</a>
+              <a href="#KAHVALTILIKLAR">KAHVALTILIKLAR</a>
+              <a href="#YUMURTALAR">YUMURTALAR</a>
+              <a href="#KURUYEMİŞLER">KURUYEMİŞLER</a>
+              <a href="#BAHARATLAR">BAHARATLAR</a>
+              <a href="#KURUMEYVELER">KURU MEYVELER</a>
+              <a href="#TAHILLAR">TAHILLAR</a>
+              <a href="#SALÇALAR">SALÇALAR</a>
+              <a href="#SOSLAR">SOSLAR</a>
+              <a href="#YAĞLAR">YAĞLAR</a>
+            </div>
+          </div>
+          <a href="Çok Satanlar.html" target="_blank">Çok Satanlar</a>
+          <a href="Çok Yakında.html" target="_blank">Çok Yakında</a>
+          <a href="Organikblog.html" target="_blank">Organik Blog</a>
+          <a href="Memnuniyet.html" target="_blank">Memnuniyet Anketi</a>
+          <a href="Hakkımızda.html" target="_blank">Hakkımızda</a>
+          <a href="İletişim.html" target="_blank">İletişim</a>
+        </div>
+      </div>
+    </header>
+    <!-- header bitiş -->
+    <!-- süt ürünleri başlangıç -->
+   
+    <section class="ürün" id="SÜTÜRÜNLERİ">
+      <h1 style="border-bottom: solid;">SÜT ÜRÜNLERİ </h1>
+     <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/inek sütü.jpeg" alt="İNEK SÜTÜ 5L" style="height: 60%;"/>
+            <h2>İNEK SÜTÜ 5L</h2>
+            <p>250TL</p>
+          </div>
+          
+          <div class="box-bottom">
+         <button onclick="AddCartItem('İNEK SÜTÜ 5L',250)" class="buton" id="btn-inek-sut">SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/inek yoğurdu.jpeg" alt="İNEK YOĞURDU 1KG" style="height: 70%;" />
+            <h2>İNEK YOĞURDU 1KG</h2>
+            <p>95TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('İNEK YOĞURDU 1KG',95)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/kaşar peyniri.jpg" alt="KAŞAR PEYNİRİ 1KG" style="height: 75%;"/>
+            <h2>KAŞAR PEYNİRİ 1KG</h2>
+            <p>230TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('KAŞAR PEYNİRİ 1KG',230)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/keçi peyniri.jpeg" alt="KEÇİ PEYNİRİ 700GR" style="height: 60%;" />
+            <h2>KEÇİ PEYNİRİ 700GR</h2>
+            <p>180TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('KEÇİ PEYNİRİ 700GR',180)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/Konu.png" alt="KÖY PEYNİRİ 500GR" style="height: 60%;"/>
+            <h2>KÖY PEYNİRİ 500GR</h2>
+            <p>95TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('KÖY PEYNİRİ 500GR',95)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/manda sütü.jpeg" alt="MANDA SÜTÜ 1L" style="height: 59%;"/>
+            <h2>MANDA SÜTÜ 1L</h2>
+            <p>95TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('MANDA SÜTÜ ',95)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/tereyağı.jpeg" alt="İNEK SÜTÜ TEREYAĞI 1KG" style="height: 50%;"/>
+            <h2 style="font-size: 2.8rem;">İNEK SÜTÜ TEREYAĞI 1KG</h2>
+            <p>400TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('İNEK SÜTÜ TEREYAĞI 1KG',400)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/örgü peyniri.jpeg" alt="ÖRGÜ PEYNİRİ 500GR" style="height: 50%;" />
+            <h2>ÖRGÜ PEYNİRİ 500GR</h2> 
+            <p>290TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('ÖRGÜ PEYNİRİ 500GR',290)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/inek sütü kaymağı.jpeg" alt="İNEK SÜTÜ KAYMAĞI 200GR" style="height: 65%;"/>
+            <h2 style="font-size: 2.4rem;">İNEK SÜTÜ KAYMAĞI 200GR</h2>
+            <p>110TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('İNEK SÜTÜ KAYMAĞI 200GR',110)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/keçi tereyağı.jpeg" alt="KEÇİ TEREYAĞI 250GR" style="height: 50%;"/>
+            <h2>KEÇİ TEREYAĞI 250GR</h2>
+            <p>165TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('KEÇİ TEREYAĞI 250GR',165)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/eski kaşar peyniri.jpeg" alt="ESKİ KAŞAR PEYNİRİ 350GR" style="height: 50%;" />
+            <h2 style="font-size: 2.5rem;">ESKİ KAŞAR PEYNİRİ 350GR</h2>
+            <p>230TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('ESKİ KAŞAR PEYNİRİ 350GR',230)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- süt ürünleri bitiş -->
+    <!-- kahvaltılık başlangıç -->
+    <section class="ürün" id="KAHVALTILIKLAR">
+      <h1 style="border-bottom: solid;">KAHVALTILIKLAR</h1>
+     
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/siyah zeytin.jpeg" alt="SİYAH MEGA ZEYTİN 500GR" style="height: 50%;"/>
+            <h2 style="font-size: 2.5rem;">SİYAH MEGA ZEYTİN 500GR</h2>
+            <p>170TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('SİYAH MEGA ZEYTİN 500GR',170)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/yeşil mega zeytin.jpeg" alt="YEŞİL MEGA ZEYTİN 500GR" style="height: 50%;"/>
+            <h2 style="font-size: 2.5rem;">YEŞİL MEGA ZEYTİN 500GR</h2>
+            <p>150TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('YEŞİL MEGA ZEYTİN 500GR',150)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/keçi boynuzu pekmezi.jpeg" alt="KEÇİ BOYNUZU PEKMEZİ 500GR" style="height: 50%;"/>
+            <h2 style="font-size: 2.2rem;">KEÇİ BOYNUZU PEKMEZİ 500GR</h2>
+            <p>195TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('KEÇİ BOYNUZU PEKMEZİ 500GR',195)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/zeytin ezme.jpeg" alt="SİYAH ZEYTİN EZMESİ 300GR" style="height: 50%;"/>
+            <h2 style="font-size: 2.4rem;">SİYAH ZEYTİN EZMESİ 300GR</h2>
+            <p>145TL</p>
+          </div>
+          <div class="box-bottom">
+            <button  onclick="AddCartItem('SİYAH ZEYTİN EZMESİ 300GR',145)"class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/tahin1.jpeg" alt="TAHİN 500GR" style="height: 45%;"/>
+            <h2>TAHİN 500GR</h2>
+            <p>130TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('TAHİN 500GR',130)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/çilek reçeli.jpeg" alt="ÇİLEK REÇELİ 250GR" style="height: 55%;" />
+            <h2>ÇİLEK REÇELİ 250GR</h2>
+            <p>95TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('ÇİLEK REÇELİ 250GR',95)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/incir reçeli.jpeg" alt="İNCİR REÇELİ 350GR" style="height: 50%;"/>
+            <h2>İNCİR REÇELİ 350GR</h2>
+            <p>110TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('İNCİR REÇELİ 350GR',110)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/yer fıstığı ezme.jpeg" alt="YER FISTIĞI EZMESİ 500GR" style="height: 66%;"/>
+            <h2 style="font-size: 2.5rem;">YER FISTIĞI EZMESİ 500GR</h2>
+            <p>180TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('YER FISTIĞI EZMESİ 500GR',180)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/şeftali marmelatı.jpeg" alt="ŞEFTALİ MARMELATI 350GR" style="height: 84%;"/>
+            <h2 style="font-size: 2.5rem;">ŞEFTALİ MARMELATI 350GR</h2>
+            <p>100TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('ŞEFTALİ MARMELATI 350GR',100)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/süzme çiçek balı.jpeg" alt="SÜZME ÇİÇEK BALI 500GR" style="height: 50%;"/>
+            <h2 style="font-size: 2.5rem;">SÜZME ÇİÇEK BALI 500GR</h2>
+            <p>170TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('SÜZME ÇİÇEK BALI 500GR',170)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- kavaltılık bitiş -->
+   <!-- yumurtalar başlangıç -->
+   <section class="ürün" id="YUMURTALAR">
+    <h1 style="border-bottom: solid;">YUMURTALAR</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="box-head">
+          <img src="images/ördek yumurtası.jpeg" alt="10'LU ÖRDEK YUMURTASI" style="height: 50%;"/>
+          <h2 style="font-size: 2.8rem;">10'LU ÖRDEK YUMURTASI</h2>
+          <p>250TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('10LU ÖRDEK YUMURTASI',250)" class="buton" >SEPETE EKLE </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/köy yumurtası.jpeg" alt="30'LU KÖY YUMURTASI" style="height: 50%;"/>
+          <h2>30'LU KÖY YUMURTASI</h2>
+          <p>210TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('30LU KÖY YUMURTASI',210)" class="buton" >SEPETE EKLE </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/Çift saralı köy yumurtası.jpeg" alt="10'LU ÇİFT SARILI KÖY YUMURTASI" style="height: 55%;"/>
+          <h2 style="font-size: 2rem;">10'LU ÇİFT SARILI KÖY YUMURTASI</h2>
+          <p>80TL</p>
+        </div>
+        <div class="box-bottom">
+          <button  onclick="AddCartItem('10LU ÇİFT SARILI KÖY YUMURTASI',80)"class="buton" >SEPETE EKLE </button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+   <!-- yumurtalar btiş -->
+   <!-- Kuruyemişler başlangıç -->
+   <section class="ürün" id="KURUYEMİŞLER">
+    <h1 style="border-bottom: solid;">KURUYEMİŞLER</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="box-head">
+          <img src="images/çiğ ceviz içi.jpeg" alt="ÇİĞ CEVİZ İÇİ 1KG"style="height: 50%;" />
+          <h2>ÇİĞ CEVİZ İÇİ 1KG</h2>
+          <p>430TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('ÇİĞ CEVİZ İÇİ 1KG',430)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/kabuklu ceviz.jpeg" alt="KABUKLU CEVİZ 1KG "style="height: 50%;"/>
+          <h2>KABUKLU CEVİZ 1KG</h2>
+          <p>250TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KABUKLU CEVİZ 1KG',250)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/kabuklu fındık.jpeg" alt="KABUKLU FINDIK 1KG" style="height: 50%;"/>
+          <h2>KABUKLU FINDIK 1KG</h2>
+          <p>300TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KABUKLU FINDIK 1KG',300)" class="buton" >SEPETE EKLE </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/çiğ fındık içi.jpeg" alt="ÇİĞ FINDIK İÇİ 500GR"style="height: 50%;"/>
+          <h2>ÇİĞ FINDIK İÇİ 500GR</h2>
+          <p>200TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('ÇİĞ FINDIK İÇİ 500GR',200)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/çiğ badem.jpeg" alt="ÇİĞ BADEM 500GR"style="height: 50%;" />
+          <h2>ÇİĞ BADEM 500GR</h2>
+          <p>200TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('ÇİĞ BADEM 500GR',200)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Kuruyemişler bitiş  -->
+   <!-- baharatlar başlangıç  -->
+   <section class="ürün" id="BAHARATLAR">
+    <h1 style="border-bottom: solid;">BAHARATLAR</h1>
+  
+    <div class="box-container">
+      <div class="box">
+        <div class="box-head">
+          <img src="images/kuru nane.jpeg" alt="KURU NANE 100GR" style="height: 50%;"/>
+          <h2>KURU NANE 100GR</h2>
+          <p>55TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KURU NANE 100GR',55)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/pul biber.jpeg" alt="PUL BİBER 100GR" style="height: 59%;"/>
+          <h2>PUL BİBER 100GR</h2>
+          <p>80TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('PUL BİBER 100GR',80)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      
+    </div>
+  </section>
+   <!-- baharatlar bitiş  -->
+   <!-- kuru meyveler başlangıç -->
+   <section class="ürün" id="KURUMEYVELER">
+    <h1 style="border-bottom: solid;">KURU MEYVELER</h1>
+  
+    <div class="box-container">
+      <div class="box">
+        <div class="box-head">
+          <img src="images/cennet hurması.webp" alt="KURU TRABZON HURMASI 1KG"style="height: 50%;"/>
+          <h2 style="font-size: 2.3rem;">KURU TRABZON HURMASI 1KG</h2>
+          <p>250TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KURU TRABZON HURMASI 1KG',250)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/kuru kayısı.jpeg" alt="KURU KAYISI 500GR" style="height: 49%;"/>
+          <h2>KURU KAYISI 500GR</h2>
+          <p>200TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KURU KAYISI 500GR',200)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/kuru dut.jpeg" alt="KURU DUT 1KG" style="height: 50%;"/>
+          <h2>KURU DUT 1KG</h2>
+          <p>150TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KURU DUT 1KG',150)" class="buton" >SEPETE EKLE </button>        </div>
+      </div>
+      <div class="box">
+        <div class="box-head">
+          <img src="images/kuru erik.jpeg" alt="KURU ERİK 500GR" style="height: 60%;"/>
+          <h2>KURU ERİK 500GR</h2>
+          <p>120TL</p>
+        </div>
+        <div class="box-bottom">
+          <button onclick="AddCartItem('KURU ERİK 500GR',120)" class="buton" >SEPETE EKLE </button>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- kuru meyveler bitiş  -->
+    <!-- tahıl başlangıç  -->
+    <section class="ürün" id="TAHILLAR">
+      <h1 style="border-bottom: solid;">TAHILLAR</h1>
+    
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/tarhana.jpeg" alt="TARHANA 1KG" style="height: 50%;" />
+            <h2>TARHANA 1KG</h2>
+            <p>450TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('TARHANA 1KG',450)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/chia-tohumu-nasil-kullanilir.jpg" alt="CHİA TOHUMU 250GR" style="height: 57%;"/>
+            <h2>CHİA TOHUMU 250GR</h2>
+            <p>60TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('CHİA TOHUMU 250GR',60)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/buğday.jpeg" alt="BUĞDAY 500GR" style="height: 67%;"/>
+            <h2>BUĞDAY 500GR</h2>
+            <p>60TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('BUĞDAY 500GR',60)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/arpa.jpeg" alt="ARPA 500GR"style="height: 50%;" />
+            <h2>ARPA 500GR</h2>
+            <p>170TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('ARPA 500GR',170)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/mısır.jpeg" alt="MISIR 500GR" style="height: 56%;"/>
+            <h2>  MISIR 500GR</h2>
+            <p>100TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('MISIR 500GR',100)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/kinoa.jpeg" alt="KİNOA 250GR" style="height: 56%;"/>
+            <h2> KİNOA 250GR</h2>
+            <p>130TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('KİNOA 250GR',130)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tahıl bitiş  -->
+    <!-- salçalar Başlangıç  -->
+    <section class="ürün" id="SALÇALAR">
+      <h1 style="border-bottom: solid;">SALÇALAR</h1>
+    
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/domates salçası.jpeg" alt="DOMATES SALÇASI 1KG"style="height: 50%;" />
+            <h2>DOMATES SALÇASI 1KG</h2>
+            <p>180TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('DOMATES SALÇASI 1KG',180)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/biber salçası.jpeg" alt="BİBER SALÇASI 1KG" style="height: 51%;"/>
+            <h2>BİBER SALÇASI 1KG</h2>
+            <p>200TL</p>
+
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('BİBER SALÇASI 1KG',200)" class="buton" >SEPETE EKLE </button>
+          </div>
+         
+      </div>
+    </section>
+    <!-- salçalar bitiş  -->
+    <!-- soslar başlangıç  -->
+    <section class="ürün" id="SOSLAR">
+      <h1 style="border-bottom: solid;">SOSLAR</h1>
+    
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/menemen harcı.jpeg" alt="MENEMEN HARCI 600GR" style="height: 56%;"/>
+            <h2 style="font-size: 2.5rem;">MENEMEN HARCI 600GR</h2>
+            <p>130TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('MENEMEN HARCI 600GR',130)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/nar ekşisi.jpeg" alt="NAR EKŞİSİ 1KG" style="height: 50%;" />
+            <h2>NAR EKŞİSİ 1KG</h2>
+            <p>250TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('NAR EKŞİSİ 1KG',250)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/domates püresi.jpeg" alt="DOMATES PÜRESİ 500GR"style="height: 65%;" />
+            <h2 style="font-size: 2.6rem;">DOMATES PÜRESİ 500GR</h2>
+            <p>80TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('DOMATES PÜRESİ 500GR',80)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- soslar bitiş -->
+     <!-- yağlar başlangıç -->
+     <section class="ürün" id="YAĞLAR">
+      <h1 style="border-bottom: solid;">YAĞLAR</h1>
+  
+      <div class="box-container">
+        <div class="box">
+          <div class="box-head">
+            <img src="images/zeytinyağı.jpeg" alt="ZEYTİNYAĞI 2L" style="height: 54%;" />
+            <h2>ZEYTİNYAĞI 2L</h2>
+            <p>350TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('ZEYTİNYAĞI 2L',350)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-head">
+            <img src="images/ayçiçek yağı.jpeg" alt="AYÇİÇEK YAĞI 3L"style="height: 62%;" />
+            <h2>AYÇİÇEK YAĞI 3L</h2>
+            <p>220TL</p>
+          </div>
+          <div class="box-bottom">
+            <button onclick="AddCartItem('AYÇİÇEK YAĞI 3L',220)" class="buton" >SEPETE EKLE </button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+      <!-- yağlar bitiş -->
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+      <script>
+        function addDarkmodeWidget() {
+          new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+      </script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

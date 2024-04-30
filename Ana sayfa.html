@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <!-- her 30 saniyede bir sayfa yeniler -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--icon için font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mel's Bazaar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link class="icon" rel="icon" type="image/png" href="images/logo.png" />
+  </head>
+  <body
+    style="
+      background-image: url(images/background\ image.jpg);
+overflow: hidden;
+    "
+  >
+    <!-- header başlangıcı  -->
+    <header class="header">
+      <a href="#" class="logo"><img src="images/logo.png" alt="logo" /></a>
+      <!-- href linkin url adresidir -->
+      <nav class="navbar" id="chk1" >
+        <a href="Ana Sayfa.html"  style="text-decoration: underline;"> Ana Sayfa </a>
+
+        <a href="Ürünlerimiz.html" target="_blank">Ürünlerimiz</a>
+        <a href="Çok Satanlar.html" target="_blank">Çok Satanlar</a>
+        <a href="Çok Yakında.html">Çok Yakında</a>
+        <a href="Organikblog.html" target="_blank">Organik Blog</a>
+        <a href="Memnuniyet.html" target="_blank">Memnuniyet Anketi</a>
+        <a href="Hakkımızda.html" target="_blank">Hakkımızda</a>
+        <a href="İletişim.html" target="_blank">İletişim</a>
+          
+      </nav>
+
+      <!-- search  bars  ve sepet kısmı -->
+      <div class="buttons" >
+        <button id="search-buton" ><i class="fas fa-search"></i></button>
+      </div>
+      <div class="buttons">
+        <a href="Sepet.html" target="_blank"><button><i class="fas fa-shopping-cart"></i></button></a>
+      </div>
+      <!-- i ikon için -->
+
+      <div class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-box"
+          placeholder="Ürünler içinde arayın"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="Ana Sayfa.html" style="text-decoration: underline;">Ana Sayfa</a>
+
+          <a href="Ürünlerimiz.html" target="_blank">Ürünlerimiz</a>
+          <a href="Çok Satanlar.html" target="_blank">Çok Satanlar</a>
+          <a href="Çok Yakında.html" target="_blank">Çok Yakında</a>
+          <a href="Organikblog.html" target="_blank">Organik Blog</a>
+          <a href="Memnuniyet.html" target="_blank">Memnuniyet Anketi</a>
+          <a href="Hakkımızda.html" target="_blank">Hakkımızda</a>
+          <a href="İletişim.html" target="_blank">İletişim</a>
+        </div>
+      </div>
+    </header>
+    <!-- header bitişi -->
+    <!-- home başlangıcı  -->
+
+    <section class="home" id="home">
+      <!-- section belgede bir bölümü tanımlar-->
+      <div class="content">
+        <h2>DOĞADAN EVE</h2>
+        <p>Tüm çabamız sağlıklı yaşamınız için</p>
+        <a href="ürünlerimiz.html" target="_blank" class="buton"
+          >Şimdi Sipariş Ver</a
+        >
+      </div>
+    </section>
+    <!-- home bitiş -->
+  <!-- saat başlangıç -->
+
+<div class="clock" id="clock"></div>
+
+<!-- saat bitiş -->
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
