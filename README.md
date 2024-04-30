@@ -1,2 +1,0 @@
-# etrade-hw
-etrade homework
